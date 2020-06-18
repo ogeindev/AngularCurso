@@ -1,0 +1,22 @@
+:host{
+  /* Es una forma de "THIS" */
+  display: block;
+  background-color: brown;
+  color: beige;
+}
+
+header{
+  display: flex;
+}
+
+h1{
+  flex: 8 1 auto;
+}
+
+div{
+  flex: 2 1 auto;
+}
+
+img{
+  max-width: 100%;
+}

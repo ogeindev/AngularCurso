@@ -1,0 +1,7 @@
+:host{
+  /* Es una forma de "THIS" */
+  display: block;
+  background-color: brown;
+  color: beige;
+  text-align: center;
+}
