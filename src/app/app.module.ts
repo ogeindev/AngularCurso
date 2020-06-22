@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
+import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 //module, forma de organizar la logica de la app
 @NgModule({
@@ -15,7 +17,9 @@ import { CoreModule } from './core/core.module';
   imports: [
     //Importa los modulo, primero tienes que importarlos como ECS6 y posteriormente en la estructura de angular
     //Es decir, primero utiliza la logica ECS6 y luego la conduce por Angular
+    RouterModule,
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     CoreModule
   ],

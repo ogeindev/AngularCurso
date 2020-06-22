@@ -1,0 +1,10 @@
+<h2>Saludo - Referencias Locales</h2>
+
+<input type="text" placeholder="Dime tu nombre" #refUserName>
+
+
+<p>Hola {{ refUserName.value ?  refUserName.value :'amigo' }}</p>
+
+<button (click)=" refUserName.value= refUserName.value">Salvar</button>
+<button (click)=" refUserName.value= '' ">Borrar</button>
+

@@ -1,0 +1,12 @@
+<h2 [title]="msg.toLocaleUpperCase()">{{titulo}}</h2>
+
+
+<!-- Banna binding, envia y recibe  [(ngModel)]="userName"-->
+<input type="text" placeholder="Dime tu nombre" [(ngModel)]="userName">
+
+
+<p>Hola {{ userName ? userName:'amigo' }}</p>
+
+
+<button (click)="onClickBorar($event)">Borrar</button>
+<button (click)="userName='Pepe'">Añadir Pepe</button>
