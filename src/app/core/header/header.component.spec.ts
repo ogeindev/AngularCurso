@@ -22,4 +22,14 @@ describe('HeaderComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should have as title 'Cuso de Angular'`, () => {
+    expect(component.title).toEqual('Cuso de Angular');
+  })
+
+  it('should render title', () => {
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement;
+    expect(compiled.querySelector('h1').textContent).toContain('Angular');
+  });
 });

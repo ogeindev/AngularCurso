@@ -1,0 +1,9 @@
+<p>Nueva tarea</p>
+
+<div>
+  <input type="text" placeholder="Describe la tarea" [(ngModel)]="tarea.nombre" />
+</div>
+<div>
+  <input type="text" placeholder="Responsable de la tarea" [(ngModel)]="tarea.responsable" />
+</div>
+<button (click)="sendAddTarea()">Guardar</button>

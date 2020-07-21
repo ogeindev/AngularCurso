@@ -1,5 +1,8 @@
 <footer>
   <address>{{autor}}</address>
-  <p>{{hoy.toLocaleDateString()}}</p>
+  <!-- Pipe con parametro -->
+  <!-- <p>{{hoy |date:'fullDate'}}</p> -->
+  <!-- <p>{{hoy | date : 'fullDate' : null : 'es' | titlecase }}</p> -->
+  <p>{{hoy | date : 'fullDate' }}</p>
 </footer>
 

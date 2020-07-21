@@ -1,0 +1,22 @@
+<h2>buscar-by-service works!</h2>
+<input type="text" name="clave" placeholder="Texto en el titulo" [(ngModel)]="clave">
+<button (click)="onClickBuscar()">Buscar</button>
+<div *ngIf="aLibros.length">
+  <h3>Lista de libros</h3>
+  <table>
+    <tr>
+      <td><b>Id</b></td>
+      <td><b>Titulo</b></td>
+      <td><b>Autores</b></td>
+    </tr>
+    <tr *ngFor="let item of aLibros">
+      <td>{{item.id}}</td>
+      <td>{{item.title}}</td>
+      <td>{{item.authors}}</td>
+    </tr>
+  </table>
+    <!-- <ul>
+      <li *ngFor="let item of aLibros">{{item}}</li>
+    </ul> -->
+
+</div>

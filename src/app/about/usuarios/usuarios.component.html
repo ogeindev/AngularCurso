@@ -1,0 +1,20 @@
+<p>usuarios works!</p>
+
+<div>
+  <input placeholder="Num Usuario" [(ngModel)]="userID">
+</div><div>
+  <input placeholder="Nombre Usuario" [(ngModel)]="newUser.name">
+  <input placeholder="Correo Usuario" [(ngModel)]="newUser.mail">
+</div>
+<div>
+  <button (click)="onRead()">ReadOne User</button>
+  <button (click)="onNew()">New User</button>
+  <button (click)="onChange()">Update User</button>
+  <button (click)="onDelete()">Delete User</button>
+</div>
+<div>
+  {{ user | json}}
+</div>
+<div>
+  {{msg}}
+</div>

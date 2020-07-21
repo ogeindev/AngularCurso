@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 
 @Component({ //Decora la clase entera
@@ -8,11 +8,13 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 })
 export class SaludoRefComponent implements OnInit {
 
-  //@ViewChild() userName //Decorador especifico. Modifica su comportamiento
+  @ViewChild('refUserName', {static: true}) userName: ElementRef; //Decorador especifico. Modifica su comportamiento
 
   constructor() { }
 
   ngOnInit(): void {
+    console.dir(this.userName.nativeElement)
+    console.log(this.userName.nativeElement)
   }
 
 }

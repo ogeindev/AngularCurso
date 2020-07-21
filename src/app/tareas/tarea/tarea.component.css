@@ -1,0 +1,10 @@
+span {
+  padding: 0 1 rem;
+}
+.boton{
+  cursor: pointer;
+}
+.completa {
+ text-decoration: line-through;
+ font-style: italic;
+}

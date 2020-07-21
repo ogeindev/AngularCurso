@@ -30,7 +30,11 @@ console.log(p2)
 // node_modules/.bin/ts-node lenguaje/objetos.ts
 
 class AlumnoTS extends PersonTS {
-  constructor(nombre, edad, public curso: string) {
+  constructor(
+    nombre, edad,
+    public curso: string,
+    public mascota: Pet
+    ) {
       super(nombre, edad)
       this.curso = curso
   }
@@ -40,9 +44,7 @@ class AlumnoTS extends PersonTS {
   }
 }
 
-const a1 = new AlumnoTS('MariCarmen', 76 , 'VUE')
-console.log(a1)
-a1.saludar()
+
 
 //TypeScript nos permite programar interfaces
 //interface, es un equivalente a una clase pero sin instanciaciones.
@@ -65,3 +67,16 @@ p5 = {
   edad: null,
   saludar: null
 }
+
+class Pet implements Mascota{
+  constructor(
+    public nombre: string,
+    public especie: string
+  ){
+
+  }
+}
+
+const a1 = new AlumnoTS('MariCarmen', 76 , 'VUE', new Pet('Spike', 'perro'));
+console.log(a1)
+a1.saludar()

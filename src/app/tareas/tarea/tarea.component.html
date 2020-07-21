@@ -1,0 +1,13 @@
+<p>tarea works!</p>
+<li>
+  <div>
+    <span><b>Nº</b>{{index}} || </span>
+    <span [ngClass]="{completa: tarea.completed}"><b>Tarea: </b>{{tarea.nombre | titlecase}}</span><br>
+    <span><b>Responsable: </b>{{tarea.responsable | uppercase}}</span>
+  </div>
+  <div>
+    <span><b>Hecha</b> <input type="checkbox" [(ngModel)]="tarea.completed" (change)="sendCheckChange()"></span>
+    <span class="boton" (click)="sendDeleteClick()"> 🗑</span>
+  </div>
+  <!-- teclas windows + "."  ===>   EMOTICONOS-->
+</li>

@@ -1,0 +1,23 @@
+<p>lista works!</p>
+<!-- (addTarea) ==>   Para que el padre responda a los eventos que llega desde el hijo.  -->
+<cas-nueva (addTarea)="addTareas($event)"></cas-nueva>
+
+<div *ngIf="aTareas.length; else invitacion">
+  <h3>Lista de tareas</h3>
+  <ul>
+    <!-- [tarea] ==> Para que el padre maneje una propiedad del hijo añadimos una propidad input que va entre [] -->
+    <cas-tarea
+      *ngFor="let item of aTareas; let i = index"
+      [tarea]="item"
+      [index]="i + 1"
+      (checkChanged)="onCheckChange($event)"
+      (clickDeleted)="onClickDelete($event)"
+    ></cas-tarea>
+  </ul>
+</div>
+
+<ng-template #invitacion>
+  <div>
+    Animate a añadir alguna tarea
+  </div>
+</ng-template>

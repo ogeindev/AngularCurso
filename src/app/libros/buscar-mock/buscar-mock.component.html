@@ -1,0 +1,11 @@
+<h2>buscar-mock works!</h2>
+<input type="text" name="clave" placeholder="Texto en el titulo" [(ngModel)]="clave">
+<button (click)="onClickBuscar()">Buscar</button>
+<button (click)="onClickBuscarAsync()">Buscar Async</button>
+<div *ngIf="aLibros.length">
+  <h3>Lista de libros</h3>
+    <ul>
+      <li *ngFor="let item of aLibros">{{item}}</li>
+    </ul>
+
+</div>

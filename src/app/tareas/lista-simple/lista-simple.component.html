@@ -1,0 +1,20 @@
+<p>lista-simple works!</p>
+<input type="text" placeholder="Describe la tarea" [(ngModel)]="tarea" />
+<button (click)="addTarea()">Guardar</button>
+
+<div *ngIf="aTareas.length; else invitacion">
+
+  <h3>Lista de tareas</h3>
+  <ul>
+    <li *ngFor="let item of aTareas">{{item}}</li>
+  </ul>
+</div>
+
+<ng-template #invitacion>
+  <div>
+    Animate a añadir alguna tarea
+  </div>
+</ng-template>
+
+<!-- Si lleva asterico por delante es por cambia el contenido del html, si no lo lleva cambia sus propiedades -->
+<!-- El Template es un fragmento de codigo que no se visualiza -->

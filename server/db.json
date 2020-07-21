@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Pepe Pérez",
+      "mail": "pepeaaaaaa@sample.com"
+    },
+    {
+      "id": 2,
+      "name": "María López",
+      "mail": "Maria@sample.com"
+    },
+    {
+      "id": 4,
+      "name": "Eduardo id4",
+      "mail": "eduid4@hot.com"
+    },
+    {
+      "id": 5,
+      "name": "asd",
+      "mail": "dsadsad"
+    },
+    {
+      "id": 6,
+      "name": "asddsd",
+      "mail": "dsadsadqweqw"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
