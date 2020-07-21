@@ -8,6 +8,7 @@ import { UsuariosComponent } from './usuarios/usuarios.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { MenuComponent } from './menu/menu.component';
 import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [AboutComponent, UsuariosComponent, ContactoComponent, MenuComponent],
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     FormsModule,
     AboutRoutingModule,
-    HomeModule
+    HomeModule,
+    NgbModule
   ]
 })
 export class AboutModule { }

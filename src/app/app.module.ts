@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { registerLocaleData } from '@angular/common';
 import  localeEs  from '@angular/common/locales/es';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 registerLocaleData(localeEs, 'es');
 
@@ -28,7 +29,8 @@ registerLocaleData(localeEs, 'es');
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
-    CoreModule
+    CoreModule,
+    NgbModule
   ],
   providers: [
       //Cuando un modulo provee de servicios, aqui se declararian los servicios
